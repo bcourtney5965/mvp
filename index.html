@@ -17,23 +17,22 @@
   <body ng-app="app">
     <div class="container" class="books-container" ng-controller="BooksController">
 
-   <!--    <div id="title">
+      <div id="title">
         <h1 class="title">The New York Times</h1>
         <h1 class="title">Best Sellers</h1>
-      </div> -->
+      </div>
 
-<!--       <div id="details">
-        <img src="{{ selectBook.cover }}" />
+      <div id="details">
+        <img src="{{ selectBook.cover }}" >
         <h2>{{ selectBook.title }}</h2>
-        <div><span>hi</span></div>
-      </div> -->
+        <div><span>{{ selectBook.pages }}</span><span style="float: right;">{{ selectBook.price | currency }}</span></div>
+      </div>
 
       <div id="books">
         <h2>Books id="books"</h2>
         <div ng-repeat="book in books">
-          <img src="{{ book.cover }}" >
+          <img ng-click="click(book)" src="{{ book.cover }}" >
         </div>
-        <!-- ng-click="selectBook(book)" -->
       </div>
 
     </div>
