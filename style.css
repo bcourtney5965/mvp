@@ -1,0 +1,26 @@
+body {
+ 	max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#container {
+  background-color: red;
+}
+#title {
+	background-color: grey;
+}
+#title {
+	background-color: red; 
+}
+#details {
+	background-color: green; 
+}
+#books {
+	background-color: blue; 
+}
+.title {
+	padding: 0;
+  width: 35;
+  margin-left: auto;
+  margin-right: auto;
+}

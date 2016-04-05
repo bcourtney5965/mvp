@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title>Books</title>
+    <!-- Stylesheets -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css"></link>
+    <link href="style.css" rel="stylesheet"/>
+
     <!-- load Angular from CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-    <script src="app.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="/node_modules/angular/angular.js"></script> -->
+    <script src="/bower_components/angular/angular.js"></script>
+    <!-- <script src="/bower_components/angular-bootstrap/ui-bootstrap.js"></script> -->
+    <script type="text/javascript" src="app.js"></script>
   </head>
   <body ng-app="app">
-    <div class="books-container" ng-controller="BooksController">
-      <h1>Todos</h1>
-      <input ng-model="newTodo">
-      <button ng-click="addTodo(newTodo)">add</button>
-      <ul>
-        <li ng-repeat="todo in todos track by ">{{ todo }}</li>
-      </ul>
+    <div class="books-container container" ng-controller="BooksController">
+
+      <div id="title">
+        <h1 class="title">The New York Times</h1>
+        <h1 class="title">Best Sellers</h1>
+      </div>
+
+      <div id="details">
+        <img src="{{ selectBook.cover }}" />
+        <h2>{{ selectBook.title }}</h2>
+        <div></div>
+      </div>
+
+      <div id="books">
+        <h2>Books id="books"</h2>
+        <div ng-repeat="book in books" ng-click="selectBook(book)"><img src="{{ selectBook.cover }}" /></div>
+      </div>
+
     </div>
-    <pre></pre>
   </body>
 </html>
