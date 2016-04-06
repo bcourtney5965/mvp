@@ -4,19 +4,17 @@ body {
   margin-right: auto;
 }
 #container {
-  background-color: red;
+  background-color: #C0C0C0;
 }
 #title {
-	background-color: grey;
+	background-color: #C0C0C0;
 }
-#title {
-	background-color: red; 
-}
+
 #details {
-	background-color: green; 
+	background-color: cyan; 
 }
 #books {
-	background-color: blue; 
+	background-color: #C0C0C0; 
 }
 .title {
 	padding: 0;
