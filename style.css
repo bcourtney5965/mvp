@@ -25,5 +25,8 @@ body {
   margin-right: auto;
 }
 h1, h2 {
-	aligh: center;
+	align: center;
+}
+img {
+ align: center;
 }
